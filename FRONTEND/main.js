@@ -1,8 +1,7 @@
-Moralis.initialize("w3ti0dl5gZuehDkY3K4uGFTJXGuNRpVxAL1uPYnu");
-Moralis.serverURL = 'https://ws3wfdplbkdz.moralis.io:2053/server'
-const TOKEN_CONTRACT_ADDRESS = "0xa859aA47039fa70Cae8dB7618103afd4cDDc371a"
+Moralis.initialize("");
+Moralis.serverURL = ''
+const TOKEN_CONTRACT_ADDRESS = ""
 
-//up to part nine (completed 9 still bugs)
 
 
 init = async () => {
