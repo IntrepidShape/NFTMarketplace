@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRarable</title>
+</head>
+<body>
+    <div>
+        <button id="btnConnect">Connect Wallet</button>
+        <button id="btnUserInfo">Profile</button>
+        <button id="btnOpenCreateItem">Create</button>
+        <button id="btnMyItems">My Items</button>
+    </div>
+
+    <div id="userInfo">
+        <h4>User Profile</h4>
+        <input type="text" id="txtUsername" required placeholder="Enter Username">
+        <input type="text" id="txtEmail" placeholder="Enter Email">
+        <small>Optional</small>
+
+        <img width="50" hight="50" src="" id="imgAvater">
+        <img src="" id="imgAvater" alt="">
+        
+        <label for="fileAvatar">Select Avatar</label>
+        <input type="file" id="fileAvatar">
+
+        <button id="btnLogout">Logout</button>
+        <button id="btnSaveUserInfo">Save</button>
+        <button id="btnCloseUserInfo">Close</button>
+    
+    </div>
+
+    <div id="CreateItem">
+        <h4>Create Item</h4>
+        <input type="text" id="txtCreateItemName" required placeholder="Enter Item Name">
+        <textarea id="txtCreateItemDescription" cols="30" rows="5" placeholder="The coolest new thing that even does stuff!!!"></textarea>
+        <input type="number" min="1" step="1" id="numCreateItemPrice" placeholder="One Million Dollars" required>
+        
+        <label for="selectCreateItemStatus">Status</label>
+        <select id="selectCreateItemStatus">
+            <option value="0">Not For Sale</option>
+            <option value="1">Instant Buy</option>
+            <option value="2">Accept Offers</option>
+        </select>       
+
+        <label for="fileCreateItemFile">Select File</label>
+        <input type="file" id="fileCreateItemFile">
+
+        <button id="btnCreateItem">Create</button>
+        <button id="btnCloseCreateItem">Close</button>
+    
+    </div>
+
+    <div id="userItems">
+        <h4>My Items</h4>
+        <div id="userItemsList"></div>
+        <button id="btnCloseUserItems">Close</button>
+
+    </div>
+
+    <div id="itemTemplate"> <!--This was made for working with vanilla javascript for prototyping and needs to change when working with a framework -->
+        <img src="" alt="">
+        <h5></h5>
+        <p></p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="abi.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
